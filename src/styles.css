@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.card {
+  display: block;
+  margin: 0, auto;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.submit-button {
+  background-color: rgb(34, 34, 188);
+  color: #fff;
+  border: 1px solid #885df1;
+  border-radius: 5px;
+}
+.weather-form {
+  margin-top: 10px;
+  width: 100%;
+}
+.temperature {
+  font-size: xx-large;
+}
+.celcious {
+  font-size: x-large;
+}
+.location-button {
+  background-color: rgb(85, 232, 240);
+  color: #5b3b3b;
+  border: 1px solid #2e2a38;
+  border-radius: 5px;
+}
