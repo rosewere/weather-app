@@ -9,10 +9,8 @@ a {
   text-decoration: none;
 }
 .card {
-  display: block;
-  margin: 0, auto;
   margin-top: 20px;
-  margin-left: 100px;
+  width: 600px;
 }
 .submit-button {
   background-color: rgb(34, 34, 188);
