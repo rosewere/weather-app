@@ -9,10 +9,10 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
+
 let currentTime = `${day} ${hour}:${minutes} `;
 let timeElement = document.querySelector("#time");
 timeElement.innerHTML = `${currentTime}`;
-
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
