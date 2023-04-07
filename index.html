@@ -19,21 +19,30 @@
       <div class="weather-app">
         <div class="container">
           <form class="weather-form" id="search-form">
-            <input
-              type="text"
-              id="city-input"
-              placeholder="Enter city"
-              autofocus="on"
-              autocomplete="off"
-            />
-            <input type="submit" value="Search" class="submit-button" />
-            <input
-              type="button"
-              value="Current"
-              class="location-button"
-              id="location-button"
-            />
+            <div class="row">
+              <div class="col-5">
+                <input
+                  type="text"
+                  id="city-input"
+                  placeholder="Enter city"
+                  autofocus="on"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="submit-button" />
+              </div>
+              <div class="col-4">
+                <input
+                  type="button"
+                  value="Current"
+                  class="location-button"
+                  id="location-button"
+                />
+              </div>
+            </div>
           </form>
+
           <h2 class="city" id="city"></h2>
           <div id="brief">
             <div id="date"></div>
@@ -46,6 +55,7 @@
                   src="https://openweathermap.org/img/wn/01d@2x.png"
                   alt="Sunny"
                   id="icon"
+                  class="icon"
                 />
                 <span><strong id="temperature"></strong> </span>
                 <span class="units" id="units">
