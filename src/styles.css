@@ -7,6 +7,7 @@ ul {
 }
 li {
   margin-top: 20px;
+  line-height: 1;
 }
 h1 {
   font-size: 24px;
@@ -52,8 +53,8 @@ a {
   margin-top: 10px;
 }
 .weather-temperature strong {
-  font-size: 30px;
-  color: #49494a;
+  font-size: 25px;
+  color: #686869;
   font-size: 64px;
 }
 .weather-temperature sup {

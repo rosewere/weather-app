@@ -22,6 +22,7 @@ function displayWeather(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  celciusTemp = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   console.log(response.data.name);
@@ -55,10 +56,31 @@ function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-search("Sydney");
+function convertToFarenheight(event) {
+  event.preventDefault();
+  let farenheightTemp = (celciusTemp * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(farenheightTemp);
+}
+
+function convertToCelcious(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celciusTemp);
+}
+
+let celciusTemp = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getLocation);
+
+let farenheightLink = document.querySelector("#f-link");
+farenheightLink.addEventListener("click", convertToFarenheight);
+
+let celciusLink = document.querySelector("#c-link");
+celciusLink.addEventListener("click", convertToCelcious);
+
+search("Sydney");
