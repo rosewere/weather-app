@@ -9,14 +9,10 @@ h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0px;
+  margin-bottom: 1;
 }
 a {
   text-decoration: none;
-}
-.card {
-  margin-top: 20px;
-  width: 600px;
 }
 
 .submit-button {
@@ -28,13 +24,9 @@ a {
 .weather-form {
   margin-top: 10px;
   width: 100%;
+  margin-bottom: 10px;
 }
-.temperature {
-  font-size: 30px;
-}
-.units {
-  font-weight: bolder;
-}
+
 .location-button {
   background-color: rgb(85, 232, 240);
   color: #5b3b3b;
@@ -52,4 +44,19 @@ a {
   margin: 20px auto;
   bottom: 0px;
   padding: 20px;
+}
+.weather-temperature {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.weather-temperature strong {
+  font-size: 30px;
+  color: #49494a;
+  line-height: 1;
+  font-size: 64px;
+}
+.weather-temperature sup {
+  position: relative;
+  font-size: 15px;
+  line-height: 1;
 }
