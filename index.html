@@ -15,8 +15,8 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card-body">
+    <div class="wrapper">
+      <div class="weather-app">
         <div class="container">
           <form class="weather-form" id="search-form">
             <input
@@ -34,42 +34,43 @@
               id="location-button"
             />
           </form>
-        </div>
-      </div>
-      <h2 class="city" id="city"></h2>
-      <div id="brief">
-        <div id="date"></div>
-        <div id="description"></div>
-      </div>
-      <div class="row align-items-start">
-        <div class="col">
-          <div class="clearfix">
-            <img
-              src="https://openweathermap.org/img/wn/01d@2x.png"
-              alt="Sunny"
-              id="icon"
-              class="float-left"
-            />
-            <span class="temperature" id="temperature"></span>
-            <span class="units" id="units">
-              <sup> °C |°F </sup>
-            </span>
+          <h2 class="city" id="city"></h2>
+          <div id="brief">
+            <div id="date"></div>
+            <div id="description"></div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="clearfix">
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt="Sunny"
+                  id="icon"
+                  class="float-left"
+                />
+                <span class="temperature" id="temperature"></span>
+                <span class="units" id="units">
+                  <sup> <a href="#">°C</a>|<a href="#">°F</a></sup>
+                </span>
+              </div>
+            </div>
+            <div class="col">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/hr</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>km/hr</li>
-          </ul>
-        </div>
       </div>
+      <footer>
+        <a href="https://github.com/rosewere/weather-app" target="_blank">
+          Open Source Code
+        </a>
+        by Rose Were
+      </footer>
     </div>
-    <footer>
-      <a href="https://github.com/rosewere/weather-app" target="_blank">
-        Open Source Code
-      </a>
-      by Rose Were
-    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>

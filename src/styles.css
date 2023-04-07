@@ -5,6 +5,12 @@ body {
 ul {
   list-style: none;
 }
+h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0px;
+}
 a {
   text-decoration: none;
 }
@@ -12,6 +18,7 @@ a {
   margin-top: 20px;
   width: 600px;
 }
+
 .submit-button {
   background-color: rgb(34, 34, 188);
   color: #fff;
@@ -23,14 +30,26 @@ a {
   width: 100%;
 }
 .temperature {
-  font-size: xx-large;
+  font-size: 30px;
 }
 .units {
-  font-size: x-large;
+  font-weight: bolder;
 }
 .location-button {
   background-color: rgb(85, 232, 240);
   color: #5b3b3b;
   border: 1px solid #2e2a38;
   border-radius: 5px;
+}
+.wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+}
+.weather-app {
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 20px auto;
+  bottom: 0px;
+  padding: 20px;
 }
