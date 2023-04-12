@@ -83,4 +83,4 @@ farenheightLink.addEventListener("click", convertToFarenheight);
 let celciusLink = document.querySelector("#c-link");
 celciusLink.addEventListener("click", convertToCelcious);
 
-search("Sydney");
+search("Nairobi");

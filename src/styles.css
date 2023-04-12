@@ -62,3 +62,19 @@ a {
   font-size: 15px;
   line-height: 5;
 }
+.weather-forecast {
+  margin-top: 15px;
+  text-align: center;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+.date {
+  color: #505153;
+}
+.max {
+  color: #262627;
+}
+.min {
+  color: #505153;
+}
