@@ -12,6 +12,34 @@ function formatDate(timestamp) {
   }
   return `${day} ${hour}: ${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class = "row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `      
+    <div class="col-2">
+      <div class="date">${day}</div>
+      <img
+        src="https://openweathermap.org/img/wn/10n@2x.png"
+        alt=""
+        width="50"
+      />
+      <div class="weather-forecast-temperature">
+        <span class="max"> 18°</span>
+        <span class="min"> 12°</span>
+      </div>
+    </div>
+    
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayWeather(response) {
   console.log(response);
@@ -84,3 +112,4 @@ let celciusLink = document.querySelector("#c-link");
 celciusLink.addEventListener("click", convertToCelcious);
 
 search("Nairobi");
+displayForecast();
