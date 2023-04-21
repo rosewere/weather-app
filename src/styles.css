@@ -19,7 +19,7 @@ a {
 }
 
 .submit-button {
-  background-color: rgb(34, 34, 188);
+  background-color: rgb(14, 104, 126);
   color: #fff;
   border: 1px solid #885df1;
   border-radius: 5px;
@@ -30,12 +30,6 @@ a {
   margin-bottom: 10px;
 }
 
-.location-button {
-  background-color: rgb(85, 232, 240);
-  color: #5b3b3b;
-  border: 1px solid #2e2a38;
-  border-radius: 5px;
-}
 .wrapper {
   max-width: 600px;
   margin: 20px auto;
@@ -46,7 +40,8 @@ a {
   max-width: 600px;
   margin: 20px auto;
   bottom: 0px;
-  padding: 20px;
+  padding: 0 20px;
+  background: linear-gradient(#f5f6f6, #7febf0);
 }
 .weather-temperature {
   margin-right: 10px;
