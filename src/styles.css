@@ -19,9 +19,9 @@ a {
 }
 
 .submit-button {
-  background-color: rgb(14, 104, 126);
+  background-color: #640c64;
   color: #fff;
-  border: 1px solid #885df1;
+  border: 1px solid #b221fb;
   border-radius: 5px;
 }
 .weather-form {
@@ -41,7 +41,7 @@ a {
   margin: 20px auto;
   bottom: 0px;
   padding: 0 20px;
-  background: linear-gradient(#f5f6f6, #7febf0);
+  background: linear-gradient(#f3c9f3, #f899f8);
 }
 .weather-temperature {
   margin-right: 10px;
