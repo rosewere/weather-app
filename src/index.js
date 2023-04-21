@@ -93,40 +93,9 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function searchLocation(position) {
-  let apiKey = "2daf65f0cdaa917f11026e8a128ce271";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeather);
-}
-function getLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-function convertToFarenheight(event) {
-  event.preventDefault();
-  let farenheightTemp = (celciusTemp * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(farenheightTemp);
-}
-
-function convertToCelcious(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celciusTemp);
-}
-
 let celciusTemp = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
-
-let locationButton = document.querySelector("#location-button");
-locationButton.addEventListener("click", getLocation);
-
-let farenheightLink = document.querySelector("#f-link");
-farenheightLink.addEventListener("click", convertToFarenheight);
-
-let celciusLink = document.querySelector("#c-link");
-celciusLink.addEventListener("click", convertToCelcious);
 
 search("Nairobi");
